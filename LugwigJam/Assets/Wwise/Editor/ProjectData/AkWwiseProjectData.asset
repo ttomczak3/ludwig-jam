@@ -138,10 +138,5 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Wwise_Ludwigjam
-  - /Wwise_Ludwigjam/Events
-  - /Wwise_Ludwigjam/Events/Default Work Unit
-  - /Wwise_Ludwigjam/Events/Default Work Unit/UI
-  - /Wwise_Ludwigjam/SoundBanks
-  - /Wwise_Ludwigjam/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
