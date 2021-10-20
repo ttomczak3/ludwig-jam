@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>D:\Game Projects\Ludwig Jam\Wwise_Ludwigjam\</ProjectRoot>
+		<SourceFilesRoot>D:\Game Projects\Ludwig Jam\Wwise_Ludwigjam\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Game Projects\Ludwig Jam\Wwise_Ludwigjam\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Game Projects\Ludwig Jam\Wwise_Ludwigjam\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2673239353">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<GameParameters>
+				<GameParameter Id="988953028" Name="SfxVolume" ObjectPath="\Game Parameters\Default Work Unit\Volume\SfxVolume"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="2410569202" Language="SFX" Hash="868514556">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main_SB</ObjectPath>
+			<ShortName>Main_SB</ShortName>
+			<Path>Main_SB.bnk</Path>
+			<IncludedEvents>
+				<Event Id="814543256" Name="Button_Click" ObjectPath="\Events\Default Work Unit\UI\Button_Click" DurationType="OneShot" DurationMin="0.312500" DurationMax="0.312500">
+					<IncludedMemoryFiles>
+						<File Id="126327646" Language="SFX">
+							<ShortName>UI_Button_Click.wav</ShortName>
+							<Path>SFX\UI_Button_Click_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

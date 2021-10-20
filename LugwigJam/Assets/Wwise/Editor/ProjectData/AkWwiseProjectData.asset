@@ -1,0 +1,195 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9323131fdfb407a459fe1ba52ad73e0b, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: afbb78af51a5bb4491a50d3a2d665ede
+    GuidInternal: 
+    m_lastTime: -8585670145419109222
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 32a87c5bc744e54d9a84e11245c8724a
+    GuidInternal: 
+    m_lastTime: -8585669372277413208
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus
+    - name: Music
+      guid: 38860f385df3834b9091341b403f67d0
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Music
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\Music
+    - name: SFX
+      guid: 4ae6b54721cbd74683231c117090519e
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: SFX
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\SFX
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 3d65c7298b7c0246bb065607f2e86e37
+    GuidInternal: 
+    m_lastTime: -8585669382175573751
+    List:
+    - name: Main_SB
+      guid: 8c41900003699846bb2b81660ba62202
+      id: 2410569202
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main_SB
+        ObjectType: 7
+      Path: Default Work Unit\Main_SB
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: bc12c0b9aaac094eb5552285bf4ca0a5
+    GuidInternal: 
+    m_lastTime: -8585669376933799698
+    List:
+    - name: Button_Click
+      guid: 7f3ba3d0ed5918418dab3055d7bebe7f
+      id: 814543256
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Button_Click
+        ObjectType: 3
+      Path: Default Work Unit\UI\Button_Click
+      maxAttenuation: 0
+      maxDuration: 0.3125
+      minDuration: 0.3125
+    - name: UI
+      guid: a1b31e35ee06f545b2a3b4e212eaebb6
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      Path: Default Work Unit\UI
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: b43fdd473b38d84a9f82420e486eebfe
+    GuidInternal: 
+    m_lastTime: -8585669368597224534
+    List:
+    - name: MusicVolume
+      guid: 88c13d5f7ec3c8408b20d4616385b3a4
+      id: 2346531308
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Volume
+        ObjectType: 4
+      - ElementName: MusicVolume
+        ObjectType: 13
+      Path: Default Work Unit\Volume\MusicVolume
+    - name: SfxVolume
+      guid: 5252d6b3a3ec994d888fda37fdfecf8b
+      id: 988953028
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Volume
+        ObjectType: 4
+      - ElementName: SfxVolume
+        ObjectType: 13
+      Path: Default Work Unit\Volume\SfxVolume
+    - name: Volume
+      guid: 4126ed414b9f864e8c482ef639d3edc0
+      id: 2415836739
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Volume
+        ObjectType: 4
+      Path: Default Work Unit\Volume
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 8ed4d666a6cad34db679b3318b7c4a35
+    GuidInternal: 
+    m_lastTime: -8585670145420150246
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: bf8e295afdcf624ca359ccd16c891f29
+    GuidInternal: 
+    m_lastTime: -8585670145420200119
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 5458da0bcc03f342b3c17bbe6bf69e46
+    GuidInternal: 
+    m_lastTime: -8585670145418909553
+    List: []
+  ExpandedItems:
+  - /Wwise_Ludwigjam
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 
