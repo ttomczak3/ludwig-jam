@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CarController : MonoBehaviour  {
 
@@ -44,8 +45,8 @@ public class CarController : MonoBehaviour  {
     }
 
     private void HandleMotor () {
-        backLeftWheelCollider.motorTorque = 1 * motorForce;
-        backRightWheelCollider.motorTorque = 1 * motorForce;
+        frontLeftWheelCollider.motorTorque = 1 * motorForce;
+        frontRightWheelCollider.motorTorque = 1 * motorForce;
         currentBreakForce = isBreaking ? breakForce : 0f;
         ApplyBreaking();
     }
