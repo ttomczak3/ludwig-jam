@@ -47,6 +47,8 @@ public class CarController : MonoBehaviour  {
     private void HandleMotor () {
         frontLeftWheelCollider.motorTorque = 1 * motorForce;
         frontRightWheelCollider.motorTorque = 1 * motorForce;
+        backLeftWheelCollider.motorTorque = 1 * motorForce;
+        backRightWheelCollider.motorTorque = 1 * motorForce;
         currentBreakForce = isBreaking ? breakForce : 0f;
         ApplyBreaking();
     }
@@ -54,6 +56,13 @@ public class CarController : MonoBehaviour  {
     private void ApplyBreaking() {
         backLeftWheelCollider.brakeTorque = currentBreakForce;
         backRightWheelCollider.brakeTorque = currentBreakForce;
+        WheelFrictionCurve LsFriction = backLeftWheelCollider.sidewaysFriction;
+        LsFriction.stiffness = 1f;
+        backLeftWheelCollider.sidewaysFriction = LsFriction;
+        WheelFrictionCurve RsFriction = backRightWheelCollider.sidewaysFriction;
+        RsFriction.stiffness = 1f;
+        backRightWheelCollider.sidewaysFriction = RsFriction;
+
     }
 
     private void HandleSteering() {
