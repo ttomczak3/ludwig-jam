@@ -14,10 +14,12 @@ public class CarController : MonoBehaviour  {
     private float currentSteerAngle;
     private float currentBreakForce;
     private bool isBreaking;
+    private Rigidbody rb;
 
     [SerializeField] private float motorForce;
     [SerializeField] private float breakForce;
     [SerializeField] private float maxSteerAngle;
+    [SerializeField] private float centerOfMass;
 
     [SerializeField] private WheelCollider frontLeftWheelCollider;
     [SerializeField] private WheelCollider frontRightWheelCollider;
@@ -32,6 +34,8 @@ public class CarController : MonoBehaviour  {
 
 
     private void FixedUpdate() {
+        rb = GetComponent<Rigidbody>();
+        rb.centerOfMass = new Vector3(0, centerOfMass, 0);
         GetInput();
         HandleMotor();
         HandleSteering();
@@ -50,25 +54,40 @@ public class CarController : MonoBehaviour  {
         backLeftWheelCollider.motorTorque = 1 * motorForce;
         backRightWheelCollider.motorTorque = 1 * motorForce;
         currentBreakForce = isBreaking ? breakForce : 0f;
+        if (isBreaking == true) {
+            WheelFrictionCurve LsFriction = backLeftWheelCollider.sidewaysFriction;
+            LsFriction.stiffness = 10f;
+            backLeftWheelCollider.sidewaysFriction = LsFriction;
+            WheelFrictionCurve RsFriction = backRightWheelCollider.sidewaysFriction;
+            RsFriction.stiffness = 10f;
+            backRightWheelCollider.sidewaysFriction = RsFriction;
+        }
+        else {
+            WheelFrictionCurve LsFriction = backLeftWheelCollider.sidewaysFriction;
+            LsFriction.stiffness = 12f;
+            backLeftWheelCollider.sidewaysFriction = LsFriction;
+            WheelFrictionCurve RsFriction = backRightWheelCollider.sidewaysFriction;
+            RsFriction.stiffness = 12f;
+            backRightWheelCollider.sidewaysFriction = RsFriction;
+        }
         ApplyBreaking();
     }
 
     private void ApplyBreaking() {
         backLeftWheelCollider.brakeTorque = currentBreakForce;
         backRightWheelCollider.brakeTorque = currentBreakForce;
-        WheelFrictionCurve LsFriction = backLeftWheelCollider.sidewaysFriction;
-        LsFriction.stiffness = 1f;
-        backLeftWheelCollider.sidewaysFriction = LsFriction;
-        WheelFrictionCurve RsFriction = backRightWheelCollider.sidewaysFriction;
-        RsFriction.stiffness = 1f;
-        backRightWheelCollider.sidewaysFriction = RsFriction;
-
     }
 
     private void HandleSteering() {
         currentSteerAngle = maxSteerAngle * horizontalInput;
         frontLeftWheelCollider.steerAngle = currentSteerAngle;
         frontRightWheelCollider.steerAngle = currentSteerAngle;
+        if (isBreaking == true || verticalInput != 0 || horizontalInput != 0) {
+            motorForce = 500f;
+        }
+        else {
+            motorForce = 1000f;
+        }
     }
 
     private void UpdateWheels() {
@@ -82,7 +101,7 @@ public class CarController : MonoBehaviour  {
         Vector3 pos;
         Quaternion rot;
         wheelCollider.GetWorldPose(out pos, out rot);
-        wheelTransform.rotation = rot;
+        //wheelTransform.rotation = rot;
         wheelTransform.position = pos;
     }
 }
