@@ -13,7 +13,6 @@ public class MainMenu : MonoBehaviour
         // To make sure the pause and menu are false when the player re-enters the game.
         PauseMenu.GameIsPaused = false;
         Time.timeScale = 1f;
-
     }
 
     public void QuitGame()
