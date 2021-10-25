@@ -79,17 +79,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motorForce: 1000
-  breakForce: 3000
+  breakForce: 5000
   maxSteerAngle: 30
   centerOfMass: 0
   frontLeftWheelCollider: {fileID: 7978327941395195369}
   frontRightWheelCollider: {fileID: 7502023767760952086}
   backLeftWheelCollider: {fileID: 4607968350889678885}
   backRightWheelCollider: {fileID: 774798426494338781}
-  frontLeftWheelTransform: {fileID: 4973895845907775570}
-  frontRightWheelTransform: {fileID: 7683181522880227881}
-  backLeftWheelTransform: {fileID: 7364141142472601765}
-  backRightWheelTransform: {fileID: 349198416246539641}
+  frontLeftWheelTransform: {fileID: 8317719215640516023}
+  frontRightWheelTransform: {fileID: 730611466158523499}
+  backLeftWheelTransform: {fileID: 8306517099681885536}
+  backRightWheelTransform: {fileID: 2660651805662399513}
 --- !u!1 &235200913781895885
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,13 +174,13 @@ WheelCollider:
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.8
     m_AsymptoteValue: 0.5
-    m_Stiffness: 1
+    m_Stiffness: 12
   m_SidewaysFriction:
     m_ExtremumSlip: 0.2
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.5
     m_AsymptoteValue: 0.75
-    m_Stiffness: 2
+    m_Stiffness: 12
   m_Enabled: 1
 --- !u!1 &1750397989041023636
 GameObject:
@@ -316,7 +316,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4644060812231581187
 Transform:
   m_ObjectHideFlags: 0
@@ -435,13 +435,13 @@ WheelCollider:
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.8
     m_AsymptoteValue: 0.5
-    m_Stiffness: 1
+    m_Stiffness: 12
   m_SidewaysFriction:
     m_ExtremumSlip: 0.2
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.5
     m_AsymptoteValue: 0.75
-    m_Stiffness: 2
+    m_Stiffness: 12
   m_Enabled: 1
 --- !u!1 &4178900951595963869
 GameObject:
@@ -496,13 +496,13 @@ WheelCollider:
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.8
     m_AsymptoteValue: 0.5
-    m_Stiffness: 1
+    m_Stiffness: 12
   m_SidewaysFriction:
     m_ExtremumSlip: 0.2
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.5
     m_AsymptoteValue: 0.75
-    m_Stiffness: 2
+    m_Stiffness: 12
   m_Enabled: 1
 --- !u!1 &6731759228457186863
 GameObject:
@@ -557,13 +557,13 @@ WheelCollider:
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.8
     m_AsymptoteValue: 0.5
-    m_Stiffness: 1
+    m_Stiffness: 12
   m_SidewaysFriction:
     m_ExtremumSlip: 0.2
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.5
     m_AsymptoteValue: 0.75
-    m_Stiffness: 2
+    m_Stiffness: 12
   m_Enabled: 1
 --- !u!1001 &8445667463782149228
 PrefabInstance:
@@ -646,19 +646,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 745fb48120b164246a9e0db7fb532be6, type: 3}
---- !u!4 &4973895845907775570 stripped
+--- !u!4 &8317719215640516023 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 3473359589692468286, guid: 745fb48120b164246a9e0db7fb532be6, type: 3}
+  m_CorrespondingSourceObject: {fileID: 458083211994380763, guid: 745fb48120b164246a9e0db7fb532be6, type: 3}
   m_PrefabInstance: {fileID: 8445667463782149228}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &349198416246539641 stripped
+--- !u!4 &2660651805662399513 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8209380233054136597, guid: 745fb48120b164246a9e0db7fb532be6, type: 3}
+  m_CorrespondingSourceObject: {fileID: -3325484498005696395, guid: 745fb48120b164246a9e0db7fb532be6, type: 3}
   m_PrefabInstance: {fileID: 8445667463782149228}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &7364141142472601765 stripped
+--- !u!4 &8306517099681885536 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -7852124264183096119, guid: 745fb48120b164246a9e0db7fb532be6, type: 3}
+  m_CorrespondingSourceObject: {fileID: -8758475957105327860, guid: 745fb48120b164246a9e0db7fb532be6, type: 3}
   m_PrefabInstance: {fileID: 8445667463782149228}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &8268521722973670279 stripped
@@ -666,8 +666,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 745fb48120b164246a9e0db7fb532be6, type: 3}
   m_PrefabInstance: {fileID: 8445667463782149228}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &7683181522880227881 stripped
+--- !u!4 &730611466158523499 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -6947597179291580859, guid: 745fb48120b164246a9e0db7fb532be6, type: 3}
+  m_CorrespondingSourceObject: {fileID: -65673218551453689, guid: 745fb48120b164246a9e0db7fb532be6, type: 3}
   m_PrefabInstance: {fileID: 8445667463782149228}
   m_PrefabAsset: {fileID: 0}

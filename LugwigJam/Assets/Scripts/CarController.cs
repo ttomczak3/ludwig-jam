@@ -15,12 +15,15 @@ public class CarController : MonoBehaviour  {
     private float currentBreakForce;
     private bool isBreaking;
     private Rigidbody rb;
+    private int currentGear = 1;
+
 
     [SerializeField] private float motorForce;
     [SerializeField] private float breakForce;
     [SerializeField] private float maxSteerAngle;
     [SerializeField] private float centerOfMass;
 
+    [SerializeField] private GameObject speedometer;
     [SerializeField] private WheelCollider frontLeftWheelCollider;
     [SerializeField] private WheelCollider frontRightWheelCollider;
     [SerializeField] private WheelCollider backLeftWheelCollider;
@@ -54,6 +57,24 @@ public class CarController : MonoBehaviour  {
         backLeftWheelCollider.motorTorque = 1 * motorForce;
         backRightWheelCollider.motorTorque = 1 * motorForce;
         currentBreakForce = isBreaking ? breakForce : 0f;
+        switch (speedometer.GetComponent<Speedometer>().speed) {
+            case float n when n <= 37: 
+                motorForce = 1000;
+                break;
+            case float n when n > 65 && n <= 107: 
+                motorForce = 2000;
+                break;
+            case float n when n > 107 && n <= 153: 
+                motorForce = 3000;
+                break;
+            case float n when n > 153 && n <= 220:
+                motorForce = 4000;
+                break;
+            case float n when n > 220 && n <= 280:
+                motorForce = 5000;
+                break;
+
+        }
         if (isBreaking == true) {
             WheelFrictionCurve LsFriction = backLeftWheelCollider.sidewaysFriction;
             LsFriction.stiffness = 10f;
@@ -83,11 +104,12 @@ public class CarController : MonoBehaviour  {
         frontLeftWheelCollider.steerAngle = currentSteerAngle;
         frontRightWheelCollider.steerAngle = currentSteerAngle;
         if (isBreaking == true || verticalInput != 0 || horizontalInput != 0) {
-            motorForce = 500f;
+            motorForce /= 2f;
+            if (currentGear > 1) {
+                currentGear -= 1;
+            }
         }
-        else {
-            motorForce = 1000f;
-        }
+
     }
 
     private void UpdateWheels() {
@@ -101,7 +123,7 @@ public class CarController : MonoBehaviour  {
         Vector3 pos;
         Quaternion rot;
         wheelCollider.GetWorldPose(out pos, out rot);
-        //wheelTransform.rotation = rot;
+        //wheelTransform.rotation = new Quaternion(0, 90, 0, 0);
         wheelTransform.position = pos;
     }
 }

@@ -16,7 +16,7 @@ public class Speedometer : MonoBehaviour
     public Text speedLabel; // The label that displays the speed;
     public RectTransform arrow; // The arrow in the speedometer
 
-    private float speed = 0.0f;
+    public float speed = 0.0f;
     private void Update()
     {
         // 3.6f to convert in kilometers
