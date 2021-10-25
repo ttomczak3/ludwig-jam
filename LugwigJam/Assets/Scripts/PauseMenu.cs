@@ -10,6 +10,14 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
 
+    void Start()
+    {
+        if (GameIsPaused == false)
+        {
+            FuckVivid();
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -39,9 +47,16 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;
     }
 
+    void FuckVivid()
+    {
+        Time.timeScale = 0f;
+        GameIsPaused = true;
+    }
+
+    [System.Obsolete]
     public void ExitGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        Application.LoadLevel(Application.loadedLevel);
     }
 
 }
