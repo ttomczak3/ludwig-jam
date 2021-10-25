@@ -14,11 +14,33 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID BUTTON_CLICK = 814543256U;
+        static const AkUniqueID GAME_MUSIC_PLAY = 3981716704U;
+        static const AkUniqueID GAME_MUSIC_STOP = 2325078882U;
+        static const AkUniqueID MAINMENU_MUSIC_PLAY = 228185428U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace LEVEL
+        {
+            static const AkUniqueID GROUP = 2782712965U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID LEVEL_1 = 1290008369U;
+                static const AkUniqueID LEVEL_2 = 1290008370U;
+                static const AkUniqueID LEVEL_3 = 1290008371U;
+                static const AkUniqueID LEVEL_4 = 1290008372U;
+                static const AkUniqueID LEVEL_5 = 1290008373U;
+            } // namespace SWITCH
+        } // namespace LEVEL
+
+    } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID MUSICVOLUME = 2346531308U;
+        static const AkUniqueID RPM = 796049864U;
         static const AkUniqueID SFXVOLUME = 988953028U;
     } // namespace GAME_PARAMETERS
 

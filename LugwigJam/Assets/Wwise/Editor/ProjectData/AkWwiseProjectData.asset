@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 32a87c5bc744e54d9a84e11245c8724a
     GuidInternal: 
-    m_lastTime: -8585669372277413208
+    m_lastTime: -8585664098341342534
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -71,7 +71,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 3d65c7298b7c0246bb065607f2e86e37
     GuidInternal: 
-    m_lastTime: -8585669382175573751
+    m_lastTime: -8585664132828052776
     List:
     - name: Main_SB
       guid: 8c41900003699846bb2b81660ba62202
@@ -90,7 +90,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: bc12c0b9aaac094eb5552285bf4ca0a5
     GuidInternal: 
-    m_lastTime: -8585669376933799698
+    m_lastTime: -8585664079749649659
     List:
     - name: Button_Click
       guid: 7f3ba3d0ed5918418dab3055d7bebe7f
@@ -106,6 +106,60 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.3125
       minDuration: 0.3125
+    - name: Game_Music_Play
+      guid: a7d761a1615fbd40ae3a5cea6dd5c5e5
+      id: 3981716704
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Game_Music_Play
+        ObjectType: 3
+      Path: Default Work Unit\Music\Game_Music_Play
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Game_Music_Stop
+      guid: 7c89e6478eb30b45965feb688019c522
+      id: 2325078882
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Game_Music_Stop
+        ObjectType: 3
+      Path: Default Work Unit\Music\Game_Music_Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: MainMenu_Music_Play
+      guid: adaa3d2714dd4049bd43f565dbe203df
+      id: 228185428
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: MainMenu_Music_Play
+        ObjectType: 3
+      Path: Default Work Unit\Music\MainMenu_Music_Play
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Music
+      guid: d3a2a1be5de05e4a8961069ceac71e34
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      Path: Default Work Unit\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: UI
       guid: a1b31e35ee06f545b2a3b4e212eaebb6
       id: 1551306167
@@ -126,7 +180,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: b43fdd473b38d84a9f82420e486eebfe
     GuidInternal: 
-    m_lastTime: -8585669368597224534
+    m_lastTime: -8585664201446324169
     List:
     - name: MusicVolume
       guid: 88c13d5f7ec3c8408b20d4616385b3a4
@@ -139,6 +193,15 @@ MonoBehaviour:
       - ElementName: MusicVolume
         ObjectType: 13
       Path: Default Work Unit\Volume\MusicVolume
+    - name: RPM
+      guid: 4a77c76917c07c44bb199deb4f9edec0
+      id: 796049864
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: RPM
+        ObjectType: 13
+      Path: Default Work Unit\RPM
     - name: SfxVolume
       guid: 5252d6b3a3ec994d888fda37fdfecf8b
       id: 988953028
@@ -177,8 +240,51 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: bf8e295afdcf624ca359ccd16c891f29
     GuidInternal: 
-    m_lastTime: -8585670145420200119
-    List: []
+    m_lastTime: -8585664132965953444
+    List:
+    - name: Level
+      guid: e88c375c8d035b4db3453d4607cfa221
+      id: 2782712965
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Level
+        ObjectType: 11
+      Path: Default Work Unit\Level
+      values:
+      - name: Level_1
+        guid: 5a1d607830b557459cc27706fb4978d7
+        id: 1290008369
+        PathAndIcons:
+        - ElementName: Level_1
+          ObjectType: 10
+      - name: Level_2
+        guid: 43b1a98f7b96bc4da090b300f8fb7125
+        id: 1290008370
+        PathAndIcons:
+        - ElementName: Level_2
+          ObjectType: 10
+      - name: Level_3
+        guid: 12da5caa21a2ca4bb4f1d116f4f4627e
+        id: 1290008371
+        PathAndIcons:
+        - ElementName: Level_3
+          ObjectType: 10
+      - name: Level_4
+        guid: abc41f6784efed438adbcfa6e40bca02
+        id: 1290008372
+        PathAndIcons:
+        - ElementName: Level_4
+          ObjectType: 10
+      - name: Level_5
+        guid: 793a68eae9474343a9f6a9bd27703fca
+        id: 1290008373
+        PathAndIcons:
+        - ElementName: Level_5
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -191,5 +297,8 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Wwise_Ludwigjam
+  - /Wwise_Ludwigjam/Switches
+  - /Wwise_Ludwigjam/Switches/Default Work Unit
+  - /Wwise_Ludwigjam/Switches/Default Work Unit/Level
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

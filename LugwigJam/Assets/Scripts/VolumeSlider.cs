@@ -36,7 +36,7 @@ public class VolumeSlider : MonoBehaviour
 
         if (whatValue == "Music")
         {
-            SFXVolume = thisSlider.value;
+            MusicVolume = thisSlider.value;
             AkSoundEngine.SetRTPCValue("MusicVolume", MusicVolume);
 
         }
