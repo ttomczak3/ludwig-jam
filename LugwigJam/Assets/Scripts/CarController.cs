@@ -16,6 +16,7 @@ public class CarController : MonoBehaviour  {
     private bool isBreaking;
     private Rigidbody rb;
     private int currentGear = 1;
+    public float currentRPM;
 
 
     [SerializeField] private float motorForce;
@@ -58,20 +59,25 @@ public class CarController : MonoBehaviour  {
         backRightWheelCollider.motorTorque = 1 * motorForce;
         currentBreakForce = isBreaking ? breakForce : 0f;
         switch (speedometer.GetComponent<Speedometer>().speed) {
-            case float n when n <= 37: 
-                motorForce = 1000;
+            case float n when n <= 65: 
+                motorForce = 750;
+                currentRPM = (speedometer.GetComponent<Speedometer>().speed / 65) * 6500 + 500;
                 break;
             case float n when n > 65 && n <= 107: 
-                motorForce = 2000;
+                motorForce = 1000;
+                currentRPM = ((speedometer.GetComponent<Speedometer>().speed - 65) / 42) * 6500 + 500;
                 break;
             case float n when n > 107 && n <= 153: 
-                motorForce = 3000;
+                motorForce = 1500;
+                currentRPM = ((speedometer.GetComponent<Speedometer>().speed - 107) / 46) * 6500 + 500;
                 break;
             case float n when n > 153 && n <= 220:
-                motorForce = 4000;
+                motorForce = 2000;
+                currentRPM = ((speedometer.GetComponent<Speedometer>().speed - 153) / 67) * 6500 + 500;
                 break;
             case float n when n > 220 && n <= 280:
-                motorForce = 5000;
+                motorForce = 2500;
+                currentRPM = ((speedometer.GetComponent<Speedometer>().speed - 220) / 60) * 6500 + 500;
                 break;
 
         }
