@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1733018233">
+		<SoundBank Id="1355168291" Language="SFX" Hash="691870125">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -20,7 +20,7 @@
 				<GameParameter Id="2346531308" Name="MusicVolume" ObjectPath="\Game Parameters\Default Work Unit\Volume\MusicVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2410569202" Language="SFX" Hash="3045972218">
+		<SoundBank Id="2410569202" Language="SFX" Hash="1204230218">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main_SB</ObjectPath>
 			<ShortName>Main_SB</ShortName>
 			<Path>Main_SB.bnk</Path>
@@ -33,6 +33,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1540131916" Name="Engine_Play" ObjectPath="\Events\Default Work Unit\Gameplay\Engine_Play" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="516812749" Language="SFX">
+							<ShortName>Sfx_Engine_Layer_1.wav</ShortName>
+							<Path>SFX\Sfx_Engine_Layer_1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="729346539" Language="SFX">
+							<ShortName>Audi A4 Allroad 2.0 TFSI Engine 4k rpm loop mono.wav</ShortName>
+							<Path>SFX\Audi A4 Allroad 2.0 TFSI Engine 4k rpm loop mono_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3509916502" Name="Engine_Stop" ObjectPath="\Events\Default Work Unit\Gameplay\Engine_Stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3981716704" Name="Game_Music_Play" ObjectPath="\Events\Default Work Unit\Music\Game_Music_Play" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="361219471" Language="SFX">
@@ -97,6 +110,9 @@
 				<Event Id="2325078882" Name="Game_Music_Stop" ObjectPath="\Events\Default Work Unit\Music\Game_Music_Stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="228185428" Name="MainMenu_Music_Play" ObjectPath="\Events\Default Work Unit\Music\MainMenu_Music_Play" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="796049864" Name="RPM" ObjectPath="\Game Parameters\Default Work Unit\RPM"/>
+			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="2782712965" Name="Level" ObjectPath="\Switches\Default Work Unit\Level" GUID="{5C378CE8-038D-4D5B-B345-3D4607CFA221}">
 					<Switches>

@@ -80,6 +80,11 @@ public class CarController : MonoBehaviour  {
                 currentRPM = ((speedometer.GetComponent<Speedometer>().speed - 220) / 60) * 6500 + 500;
                 break;
 
+                
+
+        }
+        {
+            AkSoundEngine.SetRTPCValue("RPM", currentRPM);
         }
         if (isBreaking == true) {
             WheelFrictionCurve LsFriction = backLeftWheelCollider.sidewaysFriction;

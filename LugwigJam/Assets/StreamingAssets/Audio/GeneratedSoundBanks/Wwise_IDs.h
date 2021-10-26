@@ -14,6 +14,8 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID BUTTON_CLICK = 814543256U;
+        static const AkUniqueID ENGINE_PLAY = 1540131916U;
+        static const AkUniqueID ENGINE_STOP = 3509916502U;
         static const AkUniqueID GAME_MUSIC_PLAY = 3981716704U;
         static const AkUniqueID GAME_MUSIC_STOP = 2325078882U;
         static const AkUniqueID MAINMENU_MUSIC_PLAY = 228185428U;
