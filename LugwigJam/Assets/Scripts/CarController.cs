@@ -58,6 +58,7 @@ public class CarController : MonoBehaviour  {
         backLeftWheelCollider.motorTorque = 1 * motorForce;
         backRightWheelCollider.motorTorque = 1 * motorForce;
         currentBreakForce = isBreaking ? breakForce : 0f;
+        
         switch (speedometer.GetComponent<Speedometer>().speed) {
             case float n when n <= 65: 
                 motorForce = 600;
