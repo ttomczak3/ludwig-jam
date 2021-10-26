@@ -295,10 +295,6 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585670145418909553
     List: []
-  ExpandedItems:
-  - /Wwise_Ludwigjam
-  - /Wwise_Ludwigjam/Switches
-  - /Wwise_Ludwigjam/Switches/Default Work Unit
-  - /Wwise_Ludwigjam/Switches/Default Work Unit/Level
+  ExpandedItems: []
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
