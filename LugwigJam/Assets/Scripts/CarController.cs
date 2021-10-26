@@ -60,24 +60,29 @@ public class CarController : MonoBehaviour  {
         currentBreakForce = isBreaking ? breakForce : 0f;
         switch (speedometer.GetComponent<Speedometer>().speed) {
             case float n when n <= 65: 
-                motorForce = 750;
-                currentRPM = (speedometer.GetComponent<Speedometer>().speed / 65) * 6500 + 500;
+                motorForce = 600;
+                currentRPM = (speedometer.GetComponent<Speedometer>().speed / 77) * 6500 + 500;
+                gameObject.GetComponent<Rigidbody>().drag = 0f;
                 break;
             case float n when n > 65 && n <= 107: 
-                motorForce = 1000;
-                currentRPM = ((speedometer.GetComponent<Speedometer>().speed - 65) / 42) * 6500 + 500;
+                motorForce = 750;
+                currentRPM = ((speedometer.GetComponent<Speedometer>().speed - 55) / 51) * 6500 + 500;
+                gameObject.GetComponent<Rigidbody>().drag = 0.025f;
                 break;
             case float n when n > 107 && n <= 153: 
-                motorForce = 1500;
-                currentRPM = ((speedometer.GetComponent<Speedometer>().speed - 107) / 46) * 6500 + 500;
+                motorForce = 1000;
+                currentRPM = ((speedometer.GetComponent<Speedometer>().speed - 92) / 52) * 6500 + 500;
+                gameObject.GetComponent<Rigidbody>().drag = 0.05f;
                 break;
             case float n when n > 153 && n <= 220:
-                motorForce = 2000;
-                currentRPM = ((speedometer.GetComponent<Speedometer>().speed - 153) / 67) * 6500 + 500;
+                motorForce = 1250;
+                currentRPM = ((speedometer.GetComponent<Speedometer>().speed - 133) / 70) * 6500 + 500;
+                gameObject.GetComponent<Rigidbody>().drag = 0.1f;
                 break;
             case float n when n > 220 && n <= 280:
-                motorForce = 2500;
-                currentRPM = ((speedometer.GetComponent<Speedometer>().speed - 220) / 60) * 6500 + 500;
+                motorForce = 1500;
+                currentRPM = ((speedometer.GetComponent<Speedometer>().speed - 195) / 60) * 6500 + 500;
+                gameObject.GetComponent<Rigidbody>().drag = 0.2f;
                 break;
 
                 
@@ -88,10 +93,10 @@ public class CarController : MonoBehaviour  {
         }
         if (isBreaking == true) {
             WheelFrictionCurve LsFriction = backLeftWheelCollider.sidewaysFriction;
-            LsFriction.stiffness = 10f;
+            LsFriction.stiffness = 12f;
             backLeftWheelCollider.sidewaysFriction = LsFriction;
             WheelFrictionCurve RsFriction = backRightWheelCollider.sidewaysFriction;
-            RsFriction.stiffness = 10f;
+            RsFriction.stiffness = 12f;
             backRightWheelCollider.sidewaysFriction = RsFriction;
         }
         else {
