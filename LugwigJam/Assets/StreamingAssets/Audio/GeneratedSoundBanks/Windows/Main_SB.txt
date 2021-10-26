@@ -6,26 +6,12 @@ Event	ID	Name			Wwise Object Path	Notes
 	3509916502	Engine_Stop			\Default Work Unit\Gameplay\Engine_Stop	
 	3981716704	Game_Music_Play			\Default Work Unit\Music\Game_Music_Play	
 
-Switch Group	ID	Name			Wwise Object Path	Notes
-	2782712965	Level			\Default Work Unit\Level	
-
-Switch	ID	Name	Switch Group			Notes
-	1290008369	Level_1	Level			
-	1290008370	Level_2	Level			
-	1290008371	Level_3	Level			
-	1290008372	Level_4	Level			
-	1290008373	Level_5	Level			
-
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	796049864	RPM			\Default Work Unit\RPM	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	126327646	UI_Button_Click	D:\Game Projects\Ludwig Jam\Wwise_Ludwigjam\.cache\Windows\SFX\UI_Button_Click_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Button_Click		30064
-	361219471	Music_Main_Layer_5_65bpm_4-4_+1m	D:\Game Projects\Ludwig Jam\Wwise_Ludwigjam\.cache\Windows\SFX\Music_Main_Layer_5_65bpm_4-4_+1m_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level_5\Music_Main_Layer_5_65bpm_4-4_+1m\Music_Main_Layer_5_65bpm_4-4_+1m		5848680
-	379001516	Music_Main_Layer_1_65bpm_4-4_+1m	D:\Game Projects\Ludwig Jam\Wwise_Ludwigjam\.cache\Windows\SFX\Music_Main_Layer_1_65bpm_4-4_+1m_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level_1\Music_Main_Layer_1_65bpm_4-4_+1m\Music_Main_Layer_1_65bpm_4-4_+1m		5848680
-	516812749	Sfx_Engine_Layer_1	D:\Game Projects\Ludwig Jam\Wwise_Ludwigjam\.cache\Windows\SFX\Sfx_Engine_Layer_1_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Engine\Sfx_Engine_Layer_1		2592064
-	729346539	Sfx_Engine_Layer_2	D:\Game Projects\Ludwig Jam\Wwise_Ludwigjam\.cache\Windows\SFX\Audi A4 Allroad 2.0 TFSI Engine 4k rpm loop mono_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Engine\Sfx_Engine_Layer_2		312064
-	791803231	Music_Main_Layer_2_65bpm_4-4_+1m	D:\Game Projects\Ludwig Jam\Wwise_Ludwigjam\.cache\Windows\SFX\Music_Main_Layer_2_65bpm_4-4_+1m_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level_2\Music_Main_Layer_2_65bpm_4-4_+1m\Music_Main_Layer_2_65bpm_4-4_+1m		5848680
-	996982852	Music_Main_Layer_3_65bpm_4-4_+1m	D:\Game Projects\Ludwig Jam\Wwise_Ludwigjam\.cache\Windows\SFX\Music_Main_Layer_3_65bpm_4-4_+1m_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level_4\Music_Main_Layer_4_65bpm_4-4_+1m\Music_Main_Layer_3_65bpm_4-4_+1m		5848680
-	1044594366	Music_Main_Layer_4_65bpm_4-4_+1m	D:\Game Projects\Ludwig Jam\Wwise_Ludwigjam\.cache\Windows\SFX\Music_Main_Layer_4_65bpm_4-4_+1m_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Level_4\Music_Main_Layer_4_65bpm_4-4_+1m\Music_Main_Layer_4_65bpm_4-4_+1m		5848680
+	126327646	UI_Button_Click	D:\Game Projects\Ludwig Jam\Wwise_Ludwigjam\.cache\Windows\SFX\UI_Button_Click_21D7A5C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Button_Click		9544
+	516812749	Sfx_Engine_Layer_1	D:\Game Projects\Ludwig Jam\Wwise_Ludwigjam\.cache\Windows\SFX\Sfx_Engine_Layer_1_A03254A3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Engine\Sfx_Engine_Layer_1		936378
+	729346539	Sfx_Engine_Layer_2	D:\Game Projects\Ludwig Jam\Wwise_Ludwigjam\.cache\Windows\SFX\Audi A4 Allroad 2.0 TFSI Engine 4k rpm loop mono_A03254A3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Engine\Sfx_Engine_Layer_2		100160
+	947745251	Main_Music_Full	D:\Game Projects\Ludwig Jam\Wwise_Ludwigjam\.cache\Windows\SFX\Main_Music_Full_A03254A3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Main_Music_Full		10372723
 

@@ -21,6 +21,21 @@ namespace AK
         static const AkUniqueID MAINMENU_MUSIC_PLAY = 228185428U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace LEVEL
+        {
+            static const AkUniqueID GROUP = 2782712965U;
+
+            namespace STATE
+            {
+                static const AkUniqueID LEVEL_1 = 1290008369U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace LEVEL
+
+    } // namespace STATES
+
     namespace SWITCHES
     {
         namespace LEVEL
