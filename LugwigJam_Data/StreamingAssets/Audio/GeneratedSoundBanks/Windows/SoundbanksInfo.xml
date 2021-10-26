@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>D:\Game Projects\Ludwig Jam\Wwise_Ludwigjam\</ProjectRoot>
+		<SourceFilesRoot>D:\Game Projects\Ludwig Jam\Wwise_Ludwigjam\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Game Projects\Ludwig Jam\Wwise_Ludwigjam\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Game Projects\Ludwig Jam\Wwise_Ludwigjam\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="22515473">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<GameParameters>
+				<GameParameter Id="988953028" Name="SfxVolume" ObjectPath="\Game Parameters\Default Work Unit\Volume\SfxVolume"/>
+				<GameParameter Id="2346531308" Name="MusicVolume" ObjectPath="\Game Parameters\Default Work Unit\Volume\MusicVolume"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="2410569202" Language="SFX" Hash="637704144">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main_SB</ObjectPath>
+			<ShortName>Main_SB</ShortName>
+			<Path>Main_SB.bnk</Path>
+			<IncludedEvents>
+				<Event Id="814543256" Name="Button_Click" ObjectPath="\Events\Default Work Unit\UI\Button_Click" DurationType="OneShot" DurationMin="0.312500" DurationMax="0.312500">
+					<IncludedMemoryFiles>
+						<File Id="126327646" Language="SFX">
+							<ShortName>UI_Button_Click.wav</ShortName>
+							<Path>SFX\UI_Button_Click_21D7A5C5.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1540131916" Name="Engine_Play" ObjectPath="\Events\Default Work Unit\Gameplay\Engine_Play" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="516812749" Language="SFX">
+							<ShortName>Sfx_Engine_Layer_1.wav</ShortName>
+							<Path>SFX\Sfx_Engine_Layer_1_A03254A3.wem</Path>
+						</File>
+						<File Id="729346539" Language="SFX">
+							<ShortName>Audi A4 Allroad 2.0 TFSI Engine 4k rpm loop mono.wav</ShortName>
+							<Path>SFX\Audi A4 Allroad 2.0 TFSI Engine 4k rpm loop mono_A03254A3.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3509916502" Name="Engine_Stop" ObjectPath="\Events\Default Work Unit\Gameplay\Engine_Stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3981716704" Name="Game_Music_Play" ObjectPath="\Events\Default Work Unit\Music\Game_Music_Play" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="947745251" Language="SFX">
+							<ShortName>Main_Music_Full.wav</ShortName>
+							<Path>SFX\Main_Music_Full_A03254A3.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2325078882" Name="Game_Music_Stop" ObjectPath="\Events\Default Work Unit\Music\Game_Music_Stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="228185428" Name="MainMenu_Music_Play" ObjectPath="\Events\Default Work Unit\Music\MainMenu_Music_Play" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="796049864" Name="RPM" ObjectPath="\Game Parameters\Default Work Unit\RPM"/>
+			</GameParameters>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
