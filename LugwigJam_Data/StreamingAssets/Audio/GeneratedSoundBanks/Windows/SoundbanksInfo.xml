@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="22515473">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3058399454">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -20,7 +20,7 @@
 				<GameParameter Id="2346531308" Name="MusicVolume" ObjectPath="\Game Parameters\Default Work Unit\Volume\MusicVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2410569202" Language="SFX" Hash="637704144">
+		<SoundBank Id="2410569202" Language="SFX" Hash="229584627">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main_SB</ObjectPath>
 			<ShortName>Main_SB</ShortName>
 			<Path>Main_SB.bnk</Path>
@@ -48,11 +48,64 @@
 				<Event Id="3509916502" Name="Engine_Stop" ObjectPath="\Events\Default Work Unit\Gameplay\Engine_Stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3981716704" Name="Game_Music_Play" ObjectPath="\Events\Default Work Unit\Music\Game_Music_Play" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="947745251" Language="SFX">
-							<ShortName>Main_Music_Full.wav</ShortName>
-							<Path>SFX\Main_Music_Full_A03254A3.wem</Path>
+						<File Id="361219471" Language="SFX">
+							<ShortName>Music_Main_Layer_5_65bpm_4-4_+1m.wav</ShortName>
+							<Path>SFX\Music_Main_Layer_5_65bpm_4-4_+1m_A03254A3.wem</Path>
+						</File>
+						<File Id="379001516" Language="SFX">
+							<ShortName>Music_Main_Layer_1_65bpm_4-4_+1m.wav</ShortName>
+							<Path>SFX\Music_Main_Layer_1_65bpm_4-4_+1m_A03254A3.wem</Path>
+						</File>
+						<File Id="791803231" Language="SFX">
+							<ShortName>Music_Main_Layer_2_65bpm_4-4_+1m.wav</ShortName>
+							<Path>SFX\Music_Main_Layer_2_65bpm_4-4_+1m_A03254A3.wem</Path>
+						</File>
+						<File Id="996982852" Language="SFX">
+							<ShortName>Music_Main_Layer_3_65bpm_4-4_+1m.wav</ShortName>
+							<Path>SFX\Music_Main_Layer_3_65bpm_4-4_+1m_A03254A3.wem</Path>
+						</File>
+						<File Id="1044594366" Language="SFX">
+							<ShortName>Music_Main_Layer_4_65bpm_4-4_+1m.wav</ShortName>
+							<Path>SFX\Music_Main_Layer_4_65bpm_4-4_+1m_A03254A3.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{51B89894-3C72-43AB-AE75-292B3D4B3D78}">
+							<Media>
+								<File Id="379001516"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{A1FD6115-FCC0-453D-9202-080BAC3F4FDF}">
+							<Media>
+								<File Id="379001516"/>
+								<File Id="791803231"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{311DE20B-E589-4E31-9B67-9408A7353168}">
+							<Media>
+								<File Id="379001516"/>
+								<File Id="791803231"/>
+								<File Id="996982852"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{DCDC607C-1EDD-40FD-9A7D-F80A653C05E3}">
+							<Media>
+								<File Id="379001516"/>
+								<File Id="791803231"/>
+								<File Id="996982852"/>
+								<File Id="1044594366"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{EFD9CE7F-2D01-46C6-AF29-2F69F53BCB3E}">
+							<Media>
+								<File Id="361219471"/>
+								<File Id="379001516"/>
+								<File Id="791803231"/>
+								<File Id="996982852"/>
+								<File Id="1044594366"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="2325078882" Name="Game_Music_Stop" ObjectPath="\Events\Default Work Unit\Music\Game_Music_Stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="228185428" Name="MainMenu_Music_Play" ObjectPath="\Events\Default Work Unit\Music\MainMenu_Music_Play" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -60,6 +113,18 @@
 			<GameParameters>
 				<GameParameter Id="796049864" Name="RPM" ObjectPath="\Game Parameters\Default Work Unit\RPM"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="2782712965" Name="Level" ObjectPath="\States\Default Work Unit\Level" GUID="{F8522F44-C6DC-4C4A-96D2-26D7C79BC955}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Level\None" GUID="{9B9D8AC8-2F1A-42B7-8DE3-6E8711A82A0F}"/>
+						<State Id="1290008369" Name="Level_1" ObjectPath="\States\Default Work Unit\Level\Level_1" GUID="{51B89894-3C72-43AB-AE75-292B3D4B3D78}"/>
+						<State Id="1290008370" Name="Level_2" ObjectPath="\States\Default Work Unit\Level\Level_2" GUID="{A1FD6115-FCC0-453D-9202-080BAC3F4FDF}"/>
+						<State Id="1290008371" Name="Level_3" ObjectPath="\States\Default Work Unit\Level\Level_3" GUID="{311DE20B-E589-4E31-9B67-9408A7353168}"/>
+						<State Id="1290008372" Name="Level_4" ObjectPath="\States\Default Work Unit\Level\Level_4" GUID="{DCDC607C-1EDD-40FD-9A7D-F80A653C05E3}"/>
+						<State Id="1290008373" Name="Level_5" ObjectPath="\States\Default Work Unit\Level\Level_5" GUID="{EFD9CE7F-2D01-46C6-AF29-2F69F53BCB3E}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

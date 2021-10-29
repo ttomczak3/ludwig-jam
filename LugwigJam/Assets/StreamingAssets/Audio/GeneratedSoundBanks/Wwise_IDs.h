@@ -30,29 +30,15 @@ namespace AK
             namespace STATE
             {
                 static const AkUniqueID LEVEL_1 = 1290008369U;
+                static const AkUniqueID LEVEL_2 = 1290008370U;
+                static const AkUniqueID LEVEL_3 = 1290008371U;
+                static const AkUniqueID LEVEL_4 = 1290008372U;
+                static const AkUniqueID LEVEL_5 = 1290008373U;
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
         } // namespace LEVEL
 
     } // namespace STATES
-
-    namespace SWITCHES
-    {
-        namespace LEVEL
-        {
-            static const AkUniqueID GROUP = 2782712965U;
-
-            namespace SWITCH
-            {
-                static const AkUniqueID LEVEL_1 = 1290008369U;
-                static const AkUniqueID LEVEL_2 = 1290008370U;
-                static const AkUniqueID LEVEL_3 = 1290008371U;
-                static const AkUniqueID LEVEL_4 = 1290008372U;
-                static const AkUniqueID LEVEL_5 = 1290008373U;
-            } // namespace SWITCH
-        } // namespace LEVEL
-
-    } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {

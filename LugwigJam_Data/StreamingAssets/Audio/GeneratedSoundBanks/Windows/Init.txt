@@ -4,6 +4,10 @@ State Group	ID	Name			Wwise Object Path	Notes
 State	ID	Name	State Group			Notes
 	748895195	None	Level			
 	1290008369	Level_1	Level			
+	1290008370	Level_2	Level			
+	1290008371	Level_3	Level			
+	1290008372	Level_4	Level			
+	1290008373	Level_5	Level			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	988953028	SfxVolume			\Default Work Unit\Volume\SfxVolume	
