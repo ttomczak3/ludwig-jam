@@ -60,33 +60,38 @@ public class CarController : MonoBehaviour  {
         currentBreakForce = isBreaking ? breakForce : 0f;
         
         switch (speedometer.GetComponent<Speedometer>().speed) {
-            case float n when n <= 65: 
-                motorForce = 600;
-                currentRPM = (speedometer.GetComponent<Speedometer>().speed / 77) * 6500 + 500;
-                gameObject.GetComponent<Rigidbody>().drag = 0f;
+            case float n when n <= 69: 
+                motorForce = 1454;
+                currentRPM = (speedometer.GetComponent<Speedometer>().speed / 69) * 7500;
+                //gameObject.GetComponent<Rigidbody>().drag = 0f;
                 break;
-            case float n when n > 65 && n <= 107: 
-                motorForce = 750;
-                currentRPM = ((speedometer.GetComponent<Speedometer>().speed - 55) / 51) * 6500 + 500;
-                gameObject.GetComponent<Rigidbody>().drag = 0.025f;
+            case float n when n > 69 && n <= 103: 
+                motorForce = 950;
+                currentRPM = (speedometer.GetComponent<Speedometer>().speed / 103) * 7500;
+                //gameObject.GetComponent<Rigidbody>().drag = 0.025f;
                 break;
-            case float n when n > 107 && n <= 153: 
-                motorForce = 1000;
-                currentRPM = ((speedometer.GetComponent<Speedometer>().speed - 92) / 52) * 6500 + 500;
-                gameObject.GetComponent<Rigidbody>().drag = 0.05f;
+            case float n when n > 103 && n <= 140: 
+                motorForce = 704;
+                currentRPM = (speedometer.GetComponent<Speedometer>().speed / 140) * 7500;
+                //gameObject.GetComponent<Rigidbody>().drag = 0.05f;
                 break;
-            case float n when n > 153 && n <= 220:
-                motorForce = 1250;
-                currentRPM = ((speedometer.GetComponent<Speedometer>().speed - 133) / 70) * 6500 + 500;
-                gameObject.GetComponent<Rigidbody>().drag = 0.1f;
+            case float n when n > 140 && n <= 182:
+                motorForce = 538;
+                currentRPM = (speedometer.GetComponent<Speedometer>().speed / 182) * 7500;
+                //gameObject.GetComponent<Rigidbody>().drag = 0.1f;
                 break;
-            case float n when n > 220 && n <= 280:
-                motorForce = 1500;
-                currentRPM = ((speedometer.GetComponent<Speedometer>().speed - 195) / 60) * 6500 + 500;
-                gameObject.GetComponent<Rigidbody>().drag = 0.2f;
+            case float n when n > 182 && n <= 232:
+                motorForce = 425;
+                currentRPM = (speedometer.GetComponent<Speedometer>().speed / 232) * 7500;
+                //gameObject.GetComponent<Rigidbody>().drag = 0.2f;
+                break;
+            case float n when n > 232 && n <= 290:
+                motorForce = 337;
+                currentRPM = (speedometer.GetComponent<Speedometer>().speed / 290) * 7500;
+                //gameObject.GetComponent<Rigidbody>().drag = 0.2f;
                 break;
 
-                
+
 
         }
         {
