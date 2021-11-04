@@ -6,22 +6,10 @@ using UnityEngine.UI;
 
 public class VolumeSlider : MonoBehaviour
 {
+
     public Slider thisSlider;
     public float SFXVolume;
     public float MusicVolume;
-
-
-    
-    void Start()
-    {
-        
-    }
-
-    
-    void Update()
-    {
-        
-    }
 
     public void SetSpecificVolume(string whatValue)
     {
@@ -41,6 +29,6 @@ public class VolumeSlider : MonoBehaviour
 
         }
 
-
     }
+
 }
