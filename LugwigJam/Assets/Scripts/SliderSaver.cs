@@ -7,19 +7,21 @@ public class SliderSaver : MonoBehaviour
 {
 
     [SerializeField]
-    public Slider slider;
+    private Slider slider;
     [SerializeField]
-    public int id;
+    private int id;
 
     public float sliderValue;
 
     void Awake()
     {
+        // Loading the slider values.
         slider.value = PlayerPrefs.GetFloat("sliderValue" + id, sliderValue);
     }
 
     public void ChangeSlider(float value)
     {
+        // Saving the slider values.
         sliderValue = value;
         PlayerPrefs.SetFloat("sliderValue" + id, sliderValue);
     }
