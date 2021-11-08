@@ -17,10 +17,11 @@ public class Tachometer : MonoBehaviour {
 
     public float RPM = 0.0f;
     private void Update() {
-       
+
+        RPM = target.GetComponent<CarController>().currentRPM;
 
         if (tachoLabel != null)
-            tachoLabel.text = ((int)RPM) + " km/h";
+            tachoLabel.text = ((int)RPM) + " RPM";
         if (arrow != null)
             arrow.localEulerAngles =
                 new Vector3(0, 0, Mathf.Lerp(minTachoArrowAngle, maxTachoArrowAngle, RPM / maxRPM));
